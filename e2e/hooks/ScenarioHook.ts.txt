@@ -1,0 +1,22 @@
+import {defineSupportCode} from 'cucumber';
+
+
+defineSupportCode(({registerHandler, registerListener}) =>{
+
+  registerHandler('BeforeFeature', async() => {
+    console.log('Before Executing the Feature !!!');
+  });
+
+  registerHandler('BeforeScenario', async() => {
+    console.log('Before Executing the Scenario');
+  });
+
+  registerHandler('AfterStep', async() => {
+    console.log('After Executing the Step Defination');
+  });
+
+  registerHandler('AfterScenario', async() => {
+    console.log('After Executing the Scenario');
+  });
+
+});

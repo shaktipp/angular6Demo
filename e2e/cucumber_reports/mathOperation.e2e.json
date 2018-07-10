@@ -1,0 +1,117 @@
+[
+  {
+    "description": "  This Feature file demo addition, subtraction, multiplication and division operation\n  It also show the result",
+    "keyword": "Feature",
+    "name": "MathOperation",
+    "line": 1,
+    "id": "mathoperation",
+    "tags": [],
+    "uri": "e2e\\features\\mathOperation.feature",
+    "elements": [
+      {
+        "id": "mathoperation;add-two-numbers",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add two numbers",
+        "tags": [
+          {
+            "name": "@AddScenario",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the Home page",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2054000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I write \"20\" in the \"num1\" first input field",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "write \"5\" in the \"num2\" second input field",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "select the \"sub\" as operator from drop down list",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click \"submitButton\" button",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the result should be \"15\" in the \"result\" on the screen",
+            "match": {
+              "location": "e2e\\step-definations\\mathOperationSteps.e2e-spec.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
