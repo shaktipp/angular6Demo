@@ -21,7 +21,7 @@ exports.config = {
     require: ['./step-definations/**/*.ts', './hooks/**/*.ts', 'supports/timeout.js'],
     tags: [],
     strict: true,
-    format: ["json:./e2e/cucumber_reports/mathOperation.e2e.json"],
+    format: ["json:./e2e/cucumber_reports/mathOperCucumberReport.json"],
     dryRun: false,
     compiler: [ 'ts:ts-node']
   },
@@ -29,7 +29,7 @@ exports.config = {
     var CucumberHtmlReport = require('cucumber-html-report');
 
     return CucumberHtmlReport.create({
-      source: 'e2e/cucumber_reports/mathOperation.e2e.json',
+      source: 'e2e/cucumber_reports/mathOperCucumberReport.json',
       dest: 'e2e/cucumber_reports',
       title: 'MathOperation - Protractor Test Run',
       component: new Date().toString()
